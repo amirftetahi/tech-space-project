@@ -1,0 +1,118 @@
+.header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    height: 8vh;
+
+    &__container__item {
+
+        // @media (min-width:768px) {
+        //     margin-left: 190px;
+        //     text-align: center;
+        //     display: inline-block;
+        //     justify-content: space-between;
+        //     padding: 22px 20px;
+        // }
+        @media (max-width:768px) {
+            display: none !important;
+        }
+
+    }
+
+    &__container__brand {
+        padding: 15px 10px;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            top: 50%;
+            left: 8%;
+            transform: translate(-50%, -50%);
+        }
+
+    }
+
+    &__container__burger {
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        font-size: x-large;
+
+        @media (min-width:768px) {
+            display: none !important;
+        }
+    }
+}
+
+
+.navbar {
+
+    @media (max-width:768px){
+
+        .navbar{ 
+        &__ul{ 
+            list-style-type: none;
+            &__item{ 
+                display: none; 
+           } 
+        } 
+    }
+    }
+        
+    
+
+    @media (min-width:768px) {
+        .navbar {
+            display: flex;
+            width: 70%;
+            margin-left: 180px;
+            position: relative;
+            
+
+            &__ul {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                list-style-type: none;
+                gap: 70px;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                position: absolute;
+                top: 10%;
+                width: 70%;
+                margin-left: 180px;
+                position: relative;
+                
+              
+                a {
+                    display: inline-block;
+                    color: #000;
+                    text-decoration: none;
+                    transition: .3s;
+                }
+                a:hover {
+                    color:  rgb(235, 63, 114);
+                    transition: .3s;
+                }
+                
+                a::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: rgb(235, 63, 114);
+                    transition: width .3s;
+                }
+                a:hover::after {
+                    width: 100%;
+                    //transition: width .3s;
+                }
+            }
+        }
+    }
+}

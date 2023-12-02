@@ -1,0 +1,49 @@
+.best-deals {
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+.best-product{
+    text-align: center;
+    @media (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px ;
+    }
+}
+.iphone11pro {
+
+    &__picture {
+        width: 350px;
+        height: 360px;
+    }
+
+    &__from {
+        color: gray;
+    }
+}
+
+.airpod {
+    &__picture {
+        width: 350px;
+        height: 360px;
+    }
+
+    &__from {
+        color: gray;
+    }
+}
+
+.imac {
+   text-align: center !important; 
+    &__picture {
+        width: 350px;
+        height: 360px;
+    }
+
+
+    &__from {
+        color: gray;
+    }
+}

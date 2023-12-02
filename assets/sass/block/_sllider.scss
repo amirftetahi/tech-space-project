@@ -1,0 +1,50 @@
+.slider {
+    background-image: url(../images/back-g1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0 80px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @media (min-width:768px) {
+        background-image: url(../images/pc/back-img.webp);
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+
+    &__description__heading {
+        text-align: center;
+    }
+
+    &__description__text {
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+
+.slider__footer {
+    margin: 0 auto;
+}
+
+.disccover-more {
+    color: white;
+    background-color: rgb(235, 63, 114);
+    padding: 12px 24px;
+    border-radius: 2px;
+    margin: 40px 0;
+    transition: .3s;
+}
+.disccover-more:hover {
+    background-color: white;
+    color:  rgb(235, 63, 114);
+    transition: .3s;
+}

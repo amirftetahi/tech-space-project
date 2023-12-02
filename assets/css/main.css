@@ -1,0 +1,553 @@
+body {
+  margin: 0 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  height: 8vh;
+}
+@media (max-width: 768px) {
+  .header__container__item {
+    display: none !important;
+  }
+}
+.header__container__brand {
+  padding: 15px 10px;
+}
+@media (min-width: 768px) {
+  .header__container__brand {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+  }
+}
+.header__container__burger {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  font-size: x-large;
+}
+@media (min-width: 768px) {
+  .header__container__burger {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar__ul {
+    list-style-type: none;
+  }
+  .navbar .navbar__ul__item {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .navbar {
+    display: flex;
+    width: 70%;
+    margin-left: 180px;
+    position: relative;
+  }
+  .navbar .navbar__ul {
+    display: flex;
+    list-style-type: none;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    margin-left: 180px;
+    position: relative;
+  }
+  .navbar .navbar__ul a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .navbar .navbar__ul a:hover {
+    color: rgb(235, 63, 114);
+    transition: 0.3s;
+  }
+  .navbar .navbar__ul a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(235, 63, 114);
+    transition: width 0.3s;
+  }
+  .navbar .navbar__ul a:hover::after {
+    width: 100%;
+  }
+}
+
+.slider {
+  background-image: url(../images/back-g1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0 80px;
+  color: white;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .slider {
+    background-image: url(../images/pc/back-img.webp);
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+.slider__description__heading {
+  text-align: center;
+}
+.slider__description__text {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.slider__footer {
+  margin: 0 auto;
+}
+
+.disccover-more {
+  color: white;
+  background-color: rgb(235, 63, 114);
+  padding: 12px 24px;
+  border-radius: 2px;
+  margin: 40px 0;
+  transition: 0.3s;
+}
+
+.disccover-more:hover {
+  background-color: white;
+  color: rgb(235, 63, 114);
+  transition: 0.3s;
+}
+
+.section-1 {
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+  margin-top: 20PX;
+}
+
+.headphones {
+  color: black;
+  padding-top: 10px;
+}
+.headphones__header {
+  font-size: 28px;
+  margin-top: 20px;
+}
+.headphones__text {
+  text-align: center;
+}
+.headphones__wiev__collection {
+  color: black;
+  border-bottom: 2px solid rgb(235, 63, 114);
+  padding: 20px 0 8px 0;
+  transition: 0.1s;
+  font-weight: 700;
+}
+.headphones__wiev__collection:hover {
+  color: rgb(235, 63, 114);
+  transition: 0.1s;
+}
+.headphones__description {
+  margin-top: 20px;
+  color: black;
+}
+
+.section-2 {
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+  margin-top: 20PX;
+}
+
+.smartphones {
+  color: black;
+  padding-top: 10px;
+}
+.smartphones__text {
+  text-align: center;
+}
+.smartphones__header {
+  font-size: 28px;
+  margin-top: 20px;
+}
+.smartphones__description {
+  margin-top: 20px;
+  color: black;
+}
+.smartphones__wiev__collection {
+  color: black;
+  border-bottom: 2px solid black;
+  padding: 20px 0 8px 0;
+  transition: 0.1s;
+  font-weight: 700;
+}
+.smartphones__wiev__collection:hover {
+  opacity: 50%;
+  transition: 0.1s;
+}
+
+.section-3 {
+  width: 100%;
+  height: 65vh;
+  text-align: center;
+  margin-top: 20PX;
+}
+
+.smartwatches {
+  color: black;
+  padding-top: 10px;
+}
+.smartwatches__text {
+  text-align: center;
+}
+.smartwatches__header {
+  font-size: 28px;
+  margin-top: 20px;
+}
+.smartwatches__description {
+  margin-top: 20px;
+  color: black;
+}
+.smartwatches__wiev__collection {
+  color: black;
+  border-bottom: 2px solid black;
+  padding: 20px 0 8px 0;
+  transition: 0.05s;
+  font-weight: 700;
+}
+.smartwatches__wiev__collection:hover {
+  opacity: 50%;
+  transition: 0.05s;
+}
+
+.section-4 {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.Categories__text {
+  font-size: large;
+}
+
+.Categories__description {
+  font-size: x-large;
+  margin: 0 50px;
+}
+
+.products {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.product__text {
+  color: black;
+}
+.product__text:hover {
+  color: rgb(235, 63, 114);
+}
+
+.save-more {
+  margin: 20px 80px 60px 80px;
+  text-align: center;
+}
+.save-more__description {
+  font-weight: 500;
+}
+.save-more__btn {
+  border-bottom: 2px solid rgb(235, 63, 114);
+  padding: 20px 0 8px 0;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+.save-more__btn:hover {
+  color: rgb(235, 63, 114);
+}
+
+.section-5 {
+  margin: 60px auto;
+}
+
+.more-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.more-product {
+  margin: 0.5rem 1rem;
+  width: 150px;
+  height: 270px;
+}
+.more-product__description {
+  color: black;
+  line-height: 1.2;
+  font-size: medium;
+}
+
+.more-product > a > img {
+  width: 150px;
+  height: 180px;
+}
+
+.best-deals {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.best-product {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .best-product {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+}
+
+.iphone11pro__picture {
+  width: 350px;
+  height: 360px;
+}
+.iphone11pro__from {
+  color: gray;
+}
+
+.airpod__picture {
+  width: 350px;
+  height: 360px;
+}
+.airpod__from {
+  color: gray;
+}
+
+.imac {
+  text-align: center !important;
+}
+.imac__picture {
+  width: 350px;
+  height: 360px;
+}
+.imac__from {
+  color: gray;
+}
+
+.Compact-Cameras {
+  width: 20%;
+  text-align: center;
+  margin-top: 20PX;
+}
+.Compact-Cameras__picture {
+  width: 300px;
+  height: 200px;
+}
+.Compact-Cameras__text {
+  text-align: center;
+  color: black;
+}
+
+.steps {
+  background-color: rgb(235, 63, 114);
+  text-align: center;
+  color: white;
+}
+
+.simple-steps {
+  padding: 30px 0;
+}
+
+.select-product {
+  padding: 30px 0;
+  border-bottom: 2px solid gray;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fa-magnifying-glass {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.receive-device {
+  padding: 30px 0;
+  border-bottom: 2px solid gray;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fa-box {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.send-back {
+  padding: 30px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fa-truck-fast {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.learn-more__btn {
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid white;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.learn-more__btn:hover {
+  background-color: white;
+  color: rgb(235, 63, 114);
+  transition: 0.2s;
+}
+
+.footer {
+  margin: 20px;
+}
+.footer a {
+  transition: 0.2s;
+}
+.footer a:hover {
+  opacity: 50%;
+  transition: 0.2s;
+}
+
+.google-map > a {
+  margin: 40px 0;
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
+  color: black;
+}
+
+.Categories-list > ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 3;
+}
+
+.Categories-list a {
+  color: rgb(44, 44, 44);
+}
+
+.Services-list > ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 3;
+}
+
+.Services-list a {
+  color: rgb(44, 44, 44);
+}
+
+.sign-up {
+  padding: 10px 20px;
+}
+.sign-up form {
+  width: 300px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(215, 215, 215, 0.95);
+}
+.sign-up form ::-moz-placeholder {
+  color: gray;
+}
+.sign-up form ::placeholder {
+  color: gray;
+}
+.sign-up form input {
+  all: unset;
+  font: 16px system-ui;
+  color: gray;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+.sign-up form button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+.sign-up form i {
+  padding: 10px;
+}
+
+.social-media {
+  margin: 0 20px;
+}
+
+.fa-facebook {
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.fa-instagram {
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.fa-twitter {
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.fa-youtube {
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 20px;
+}/*# sourceMappingURL=main.css.map */
